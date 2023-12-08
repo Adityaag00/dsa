@@ -24,7 +24,7 @@ public class day5P2 {
         List<String> temperatureToHumidityMap = new ArrayList<>();
         List<String> humidityToLocationMap = new ArrayList<>();
         AtomicReference<String> current = new AtomicReference<>("");
-        Files.readAllLines(Path.of("/Users/aditya/Programming Workspace/JAVA/ProjectDSA/src/main/java/aoc/input/day5.txt")).forEach(input -> {
+        Files.readAllLines(Path.of("F:\\Programming Workspace\\JAVA\\ProjectDSA\\src\\main\\java\\aoc\\input\\day5.txt")).forEach(input -> {
             if (input.startsWith("seeds")) {
                 String[] seedT = input.split(":")[1].split(" ");
                 seedT = Arrays.stream(seedT).filter(s -> !s.equals("") && !s.equals(" ")).toArray(String[]::new);
@@ -213,7 +213,7 @@ public class day5P2 {
         out.close();
     }
 
-    public static void addInListPair(long a, long b, long rA, long rB,long rk,long rj, List<Pair> x) {
+    public static void addInListPair(long a, long b, long rA, long rB, List<Pair> x) {
         System.out.println("-----------------"+" a: "+a+" b: "+b+" rA: "+rA+" rB: "+rB);
         if (a > rA) {
             if (b < rB) {
